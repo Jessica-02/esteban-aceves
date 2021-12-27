@@ -1,0 +1,34 @@
+.container-header{
+    width: 100%;
+    height: 100vh;
+    background: #171918 url(../img/fondo.png) no-repeat center center / cover;
+    position: relative;
+    .logo img{
+        width: 100px;
+    }
+}
+.container-header::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:linear-gradient(hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
+}
+.about{
+    background-color: #171918;
+    color: #fff;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    .about-text h2{
+        font-size:48px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    .about-img img{
+        width: 90%;
+    }
+}

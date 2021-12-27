@@ -1,0 +1,45 @@
+.container-header {
+  width: 100%;
+  height: 100vh;
+  background: #171918 url(../img/fondo.png) no-repeat center center/cover;
+  position: relative;
+}
+
+.container-header .logo img {
+  width: 100px;
+}
+
+.container-header::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 24, 23, 0)), to(#161817));
+  background: linear-gradient(rgba(22, 24, 23, 0), #161817);
+}
+
+.about {
+  background-color: #171918;
+  color: #fff;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-text h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.about .about-img img {
+  width: 90%;
+}
+/*# sourceMappingURL=style.css.map */
