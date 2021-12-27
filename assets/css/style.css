@@ -9,6 +9,60 @@
   width: 100px;
 }
 
+.container-header .header-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-header .header-section .header-img img {
+  width: 500px;
+}
+
+.container-header .header-section .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.container-header .header-section .header-text .vertical-text h2 {
+  font-size: 50px;
+  font-weight: 900;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.container-header .header-section .header-text .vertical-text h2::after {
+  position: absolute;
+  content: "";
+  bottom: 35px;
+  right: 20px;
+  width: 80px;
+  height: 7px;
+  background-color: #57D7FF;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.container-header .header-section .header-text .horizontal-text p {
+  font-size: 23px;
+  font-weight: 100;
+}
+
 .container-header::before {
   content: "";
   width: 100%;
@@ -20,26 +74,99 @@
   background: linear-gradient(rgba(22, 24, 23, 0), #161817);
 }
 
-.about {
+.blog-container {
+  width: 100%;
   background-color: #171918;
   color: #fff;
-  width: 100%;
-  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
-.about .about-text h2 {
-  font-size: 48px;
+.blog-container .blog-text h2 {
+  font-weight: 900;
   text-transform: uppercase;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 120px;
+  color: rgba(87, 216, 255, 0.075);
+}
+
+.blog-container .title-viajes h2 {
+  margin-left: 0;
+}
+
+.blog-container .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.blog-container .blog .text-blog h3 {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.blog-container .blog .text-blog h3 span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-container .blog .tex-viajes h3 {
+  margin-left: -60px;
+}
+
+.blog-container .blog .text-blog p {
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.blog-container .blog .btn {
+  color: #fff;
+  border: 2px solid #57D7FF;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+.blog-container .blog .tex-viajes p, .blog-container .blog .btn-viajes {
+  margin-left: 20px;
+}
+
+.blog-img img {
+  width: 300px;
+}
+
+.blog-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.blog-right .tex-blog-right {
   text-align: right;
 }
 
-.about .about-img img {
-  width: 90%;
+.blog-right .tex-blog-right h3 {
+  margin-right: -60px;
+}
+
+.blog-right .btn-viajes, .blog-right .tex-blog-right p {
+  margin-right: 20px;
+}
+
+.title-blog h2 {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

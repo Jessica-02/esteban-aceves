@@ -1,10 +1,51 @@
+//Header
 .container-header{
     width: 100%;
     height: 100vh;
     background: #171918 url(../img/fondo.png) no-repeat center center / cover;
     position: relative;
+    
     .logo img{
         width: 100px;
+    }
+    .header-section{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .header-img img{
+           width: 500px; 
+        }
+        .header-text{
+            display: flex;
+            align-items: center;
+            color: #fff;
+
+            .vertical-text h2{
+                font-size: 50px;
+                font-weight: 900;
+                writing-mode: vertical-lr;
+                text-transform: uppercase;
+                position: relative;
+
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 35px;
+                    right: 20px;
+                    width: 80px;
+                    height: 7px;
+                    background-color: #57D7FF;
+                    transform: rotate(90deg);
+                }
+            }
+            
+            .horizontal-text p{
+                font-size: 23px;
+                font-weight: 100;
+            }
+        }
     }
 }
 .container-header::before{
@@ -16,19 +57,79 @@
     right: 0;
     background:linear-gradient(hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
 }
-.about{
+
+// Seccion 3 - Blogs - Viajes
+.blog-container{
+    width: 100%;
     background-color: #171918;
     color: #fff;
-    width: 100%;
-    height: 600px;
     display: flex;
     align-items: center;
-    .about-text h2{
-        font-size:48px;
+    padding: 10px;
+
+    .blog-text h2{
+        font-weight: 900;
         text-transform: uppercase;
-        text-align: right;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 120px;
+        color: hsla(194, 100%, 67%, 0.075);
     }
-    .about-img img{
-        width: 90%;
+    .title-viajes h2{
+        margin-left: 0;
+    }
+
+    .blog{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .text-blog h3{
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+            span{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .tex-viajes h3{
+            margin-left: -60px;
+            }
+        .text-blog p{
+            font-size: 23px;
+            font-weight: 100;
+        }
+        .btn{
+            color: #fff;
+            border: 2px solid #57D7FF;
+            padding: 5px 30px;
+            border-radius: 10px;
+        }
+        .tex-viajes p, .btn-viajes{
+            margin-left: 20px;
+        }
     }
 }
+.blog-img img{
+    width: 300px;
+}
+//Seccion 4 Blog
+.blog-right{
+    justify-content: end;
+
+    .tex-blog-right{
+        text-align: right;
+    }
+    .tex-blog-right h3{
+        margin-right: -60px;
+    }
+    .btn-viajes, .tex-blog-right p{
+        margin-right: 20px;
+
+    }
+}
+.title-blog h2{
+    margin-right: 10px;
+}
+
