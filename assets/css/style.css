@@ -74,6 +74,111 @@
   background: linear-gradient(rgba(22, 24, 23, 0), #161817);
 }
 
+.about {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #171918;
+}
+
+.about .designer div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 600px;
+}
+
+.about .designer div:nth-child(2) {
+  background: url(../img/esteban-about.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 1;
+}
+
+.about .designer div h2, .about .dancer div h2, .about .entrepreneur div h2, .about .traveler div h2 {
+  position: absolute;
+  left: 800px;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.about .designer div h2 {
+  color: #fff;
+  line-height: 500px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+.about .designer div:nth-child(2) h2,
+.about .entrepreneur div:nth-child(2) h2 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
+.about .dancer div h2 {
+  -webkit-animation: animate 14s linear infinite;
+          animation: animate 14s linear infinite;
+  color: #57D7FF;
+  line-height: 600px;
+}
+
+.about .dancer div:nth-child(2) h2,
+.about .traveler div:nth-child(2) h2 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #57D7FF;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
+.about .entrepreneur div h2 {
+  color: #fff;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+  line-height: 700px;
+}
+
+.about .traveler div h2 {
+  color: #57D7FF;
+  line-height: 800px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .blog-container {
   width: 100%;
   background-color: #171918;
@@ -84,7 +189,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 50px 10px 0 10px;
 }
 
 .blog-container .blog-text h2 {
@@ -126,6 +231,18 @@
 
 .blog-container .blog .tex-viajes h3 {
   margin-left: -60px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-container .blog .tex-viajes h3::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57D7FF;
 }
 
 .blog-container .blog .text-blog p {
@@ -148,6 +265,14 @@
   width: 300px;
 }
 
+.blog-container-rigth {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-bottom: 100px;
+}
+
 .blog-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -160,6 +285,18 @@
 
 .blog-right .tex-blog-right h3 {
   margin-right: -60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.blog-right .tex-blog-right h3::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57D7FF;
 }
 
 .blog-right .btn-viajes, .blog-right .tex-blog-right p {
@@ -168,5 +305,108 @@
 
 .title-blog h2 {
   margin-right: 10px;
+}
+
+.tienda {
+  width: 100%;
+  height: 600px;
+  background: #171918 url(../img/fondo-tienda.png) no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tienda h2 {
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: -95px;
+  left: 160px;
+}
+
+.tienda .tienda-text {
+  width: 30%;
+  text-align: center;
+}
+
+.tienda .tienda-text p {
+  font-weight: 100;
+  font-size: 23px;
+}
+
+.tienda .tienda-text button {
+  color: #fff;
+  border: 2px solid #57D7FF;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+.contacto-container {
+  background-color: #171918;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.contacto-container .title {
+  font-weight: 900;
+  font-size: 200px;
+  text-transform: uppercase;
+  color: rgba(87, 216, 255, 0.034);
+  position: absolute;
+  top: -55px;
+  left: 200px;
+}
+
+.contacto-container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto-container .footer-content .logo {
+  width: 200px;
+  height: 100px;
+}
+
+.contacto-container .footer-content .contacto-texts {
+  line-height: 0;
+}
+
+.contacto-container .footer-content .social-media .fab {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.contacto-container .copy {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contacto-container .copy .webcastell {
+  text-decoration: none;
+  color: #57d8ffcb;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

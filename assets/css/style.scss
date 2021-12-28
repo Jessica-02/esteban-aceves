@@ -58,6 +58,88 @@
     background:linear-gradient(hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
 }
 
+//seccion 2 - About
+.about{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    background-color: #171918;
+    .designer div{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 90%;
+        height: 600px;
+    }
+    .designer div:nth-child(2){
+        background:url(../img/esteban-about.png);
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: 1;
+    }
+    
+    .designer div h2, .dancer div h2, .entrepreneur div h2,.traveler div h2{
+        position: absolute;
+        left: 800px;
+        font-size: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+        cursor: default;
+        white-space: nowrap;
+    }
+    
+    .designer div h2{
+        color: #fff;
+        line-height: 500px;
+        animation: animate 10s linear infinite;
+    }
+    .designer div:nth-child(2) h2,
+    .entrepreneur div:nth-child(2) h2{
+        -webkit-text-stroke:2px ;
+        -webkit-text-stroke-color:#fff;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+        z-index: 5;
+    }
+    
+    .dancer div h2{
+        animation: animate 14s linear infinite;
+        color: #57D7FF;
+        line-height: 600px;
+    }
+    .dancer div:nth-child(2) h2,
+    .traveler div:nth-child(2) h2{
+        -webkit-text-stroke:2px ;
+        -webkit-text-stroke-color:#57D7FF;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+        z-index: 5;
+    }
+    .entrepreneur div h2{
+        color: #fff;
+        animation: animate 8s linear infinite;
+        line-height: 700px;
+    }
+    .traveler div h2{
+        color: #57D7FF;
+        line-height: 800px;
+        animation: animate 10s linear infinite;
+    }
+    
+    @keyframes animate{
+        0%{
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
 // Seccion 3 - Blogs - Viajes
 .blog-container{
     width: 100%;
@@ -65,7 +147,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 50px 10px 0 10px;
 
     .blog-text h2{
         font-weight: 900;
@@ -95,6 +177,17 @@
         }
         .tex-viajes h3{
             margin-left: -60px;
+            position: relative;
+            margin-bottom: 30px;
+            }
+            .tex-viajes h3::after{
+                position: absolute;
+                content: "";
+                bottom: -5px;
+                left: 0;
+                width: 100px;
+                height: 7px;
+                background-color: #57D7FF;
             }
         .text-blog p{
             font-size: 23px;
@@ -114,15 +207,30 @@
 .blog-img img{
     width: 300px;
 }
+.blog-container-rigth{
+    flex-direction: row-reverse;
+    padding-bottom: 100px;
+}
 //Seccion 4 Blog
 .blog-right{
     justify-content: end;
-
     .tex-blog-right{
         text-align: right;
     }
     .tex-blog-right h3{
         margin-right: -60px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+                bottom: -5px;
+                right: 0;
+                width: 100px;
+                height: 7px;
+                background-color: #57D7FF;
+
+        }
     }
     .btn-viajes, .tex-blog-right p{
         margin-right: 20px;
@@ -133,3 +241,96 @@
     margin-right: 10px;
 }
 
+//Seccion 5 Tienda
+.tienda{
+    width: 100%;
+    height: 600px;
+    background: #171918 url(../img/fondo-tienda.png) no-repeat center center / cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        text-transform: uppercase;
+        font-size: 120px;
+        font-weight: 900;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: -95px;
+        left: 160px;
+    }
+    .tienda-text{
+        width: 30%;
+        text-align: center;
+        p{
+            font-weight: 100;
+            font-size: 23px;
+        }
+        button{
+            color: #fff;
+            border: 2px solid #57D7FF;
+            padding: 5px 30px;
+            border-radius: 10px;
+        }
+    }
+}
+// .tienda::before{
+//     content: "";
+//     width: 100%;
+//     height: 600px;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background:linear-gradient(hsl(150, 4%, 9%), hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
+// }
+
+//Footer
+.contacto-container{
+    background-color: #171918;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+
+    .title{
+        font-weight: 900;
+        font-size: 200px;
+        text-transform: uppercase;
+        color: hsla(194, 100%, 67%, 0.034);
+        position: absolute;
+        top: -55px;
+        left: 200px;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo{
+            width: 200px;
+            height: 100px;
+        }
+
+        .contacto-texts{
+            line-height: 0;
+        }
+
+        .social-media .fab{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+    .copy{
+        text-align: center;
+        margin-top: 30px;
+       .webcastell{
+            text-decoration: none;
+            color: #57d8ffcb;
+            font-weight: 500;
+        }
+    }
+}
