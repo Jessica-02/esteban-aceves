@@ -34,6 +34,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  margin-top: 100px;
 }
 
 .container-header .header-section .header-text .vertical-text h2 {
@@ -44,6 +45,7 @@
           writing-mode: vertical-lr;
   text-transform: uppercase;
   position: relative;
+  margin-right: 10px;
 }
 
 .container-header .header-section .header-text .vertical-text h2::after {
@@ -61,6 +63,18 @@
 .container-header .header-section .header-text .horizontal-text p {
   font-size: 23px;
   font-weight: 100;
+  position: relative;
+}
+
+.container-header .header-section .header-text .title-container {
+  position: absolute;
+  top: 130px;
+  right: 330px;
+  width: 30%;
+}
+
+.container-header .header-section .header-text .title-container .title {
+  font-size: 0;
 }
 
 .container-header::before {
