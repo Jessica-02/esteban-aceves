@@ -472,8 +472,8 @@
     }
     .container-header .header-section .header-text .title-container{
         width: 80%;
-        left: 15%;
-        top: 10%;
+        left: 16%;
+        top: 18%;
     }
     .container-header {
         height: 80vh;
@@ -481,5 +481,21 @@
     .container-header .header-section .header-text{
         margin-top: 0;
         text-align: center;
+    }
+    .about .designer div{
+        top: -85px;
+        left: 12px;
+    }
+    .about .designer div{
+        width: 100%;
+    }
+    .about .dancer div h2{
+        line-height: 410px;
+    }
+    .about .entrepreneur div h2{
+        line-height: 490px;
+    }
+    .about .traveler div h2{
+        line-height: 570px;
     }
 }
