@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <title>Esteban Aceves</title>
   </head>
   <body>
@@ -53,17 +51,17 @@
         </div>
       </nav>
       <div class="header-section container">
-        <div class="header-img">
+        <div class="header-img" data-aos="fade-up-right" data-aos-duration="1000">
           <img src="assets/img/esteban.png" alt="Esteban Aceves">
         </div>
         <div class="header-text">
           <div class="title-container">
             <h1 class="title">Esteban Aceves</h1>
           </div>
-          <div class="vertical-text">
+          <div class="vertical-text" data-aos="fade-down" data-aos-duration="1500">
             <h2>Hola</h2>
           </div>
-          <div class="horizontal-text">
+          <div class="horizontal-text" data-aos="fade-up" data-aos-duration="1500">
             <p>Soy Esteban Aceves, te doy la bienvenida a mi sitio web, aqui encontrarás lo que más me gusta hacer: bailar, viajar, emprender y diseñar; espero disfrutes y te sea de utilidad lo que aqui comparto.</p>
           </div>
         </div>
@@ -116,15 +114,15 @@
     </section>
 
     <section class="blog-container">
-      <div class="blog-text title-viajes">
+      <div class="blog-text title-viajes" data-aos="fade-up" data-aos-duration="1000">
         <h2>Viajes</h2>
       </div>
       <div class="blog">
         <div class="blog-img">
-          <img src="assets/img/blog.png" alt="Blog">
+          <img src="assets/img/blog.png" alt="Blog" data-aos="flip-right" data-aos-duration="1000">
         </div>
         <div class="text-blog tex-viajes">
-          <h3>La vida <br><span>sabrosa</span></h3>
+          <h3 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">La vida <br><span>sabrosa</span></h3>
           <p>La vida se vive por instantes y cómo es muy complicado estar siempre concentrado en alejarse de preocupaciones lo que dio hago es ver la vida por días y tratar de que no hay día en que realice ese algo </p>
           <a class="btn-general btn-viajes" href="#">
             <svg>   
@@ -137,16 +135,16 @@
     </section>
 
     <section class="blog-container blog-container-rigth">
-      <div class="blog-text title-blog">
+      <div class="blog-text title-blog" data-aos="fade-up" data-aos-duration="1000">
         <h2>blog</h2>
       </div>
-      <div class="blog-img">
+      <div class="blog-img" data-aos="flip-left" data-aos-duration="1000">
         <img src="assets/img/blog2.png" alt="Blog">
       </div>
       <div class="blog blog-right">
         <div class="text-blog tex-blog-right">
-          <h3>Campeonato <br><span>ruedafest</span></h3>
-          <p>El baile me ha regalado muchísimos momento de goce y satisfacción, este es uno de ellos el subirse a l escenario con tanlentosos bailarines y amigos, bailar la coreografía que teníamos tan preparada y sentir la adrenalina de escuchar el </p>
+          <h3 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500">Campeonato <br><span>ruedafest</span></h3>
+          <p>El baile me ha regalado muchísimos momento de goce y satisfaccón, este es uno de ellos el subirse a l escenario con tanlentosos bailarines y amigos, bailar la coreografía que teníamos tan preparada y sentir la adrenalina de escuchar el </p>
           <a class="btn-general btn-blog" href="#">
             <svg>   
               <rect></rect>
@@ -159,9 +157,9 @@
     </section>
 
     <section class="tienda">
-      <h2>Tienda</h2>
-      <div class="tienda-text">
-        <p>Descubre mi marca de ropa El Gran Nagual, encontrarás prendas para tu vida de ejercicio, baile o simplemente para andar con flow por la calle. Aunque recuerda que lo más importante es la “actitud”</p>
+      <h2 data-aos="fade-right" data-aos-duration="1200">Tienda</h2>
+      <div class="tienda-text" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <p >Descubre mi marca de ropa El Gran Nagual, encontrarás prendas para tu vida de ejercicio, baile o simplemente para andar con flow por la calle. Aunque recuerda que lo más importante es la “actitud”</p>
         <a class="btn-general btn-tienda" href="#">
           <svg>   
             <rect></rect>
@@ -198,7 +196,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
     <script src="assets/js/animation.js"></script>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -401,6 +401,13 @@
 
 
 // Responsive 
+
+@media screen and (min-width: 768px) and (max-width: 768px){
+    
+}
+
+
+
 @media screen and (min-width: 320px) and (max-width: 768px){
     .header-img{
         display: none;
@@ -447,8 +454,18 @@
     .tienda .tienda-text{
         width: 90%;
     }
+    .container-header .header-section .header-text .title-container{
+        width: 80%;
+        left: 18%;
+        top: 25px;
+    }
+    .container-header {
+        height: 80vh;
+    }
+    .container-header .header-section .header-text .vertical-text h2{
+        margin-left: 0;
+    }
 }
-
 @media screen and (min-width: 320px) and (max-width: 640px){
     
     .designer div h2, .dancer div h2, .entrepreneur div h2,.traveler div h2{
@@ -471,12 +488,8 @@
         display: none;
     }
     .container-header .header-section .header-text .title-container{
-        width: 80%;
         left: 16%;
-        top: 18%;
-    }
-    .container-header {
-        height: 80vh;
+        top: 10%;
     }
     .container-header .header-section .header-text{
         margin-top: 0;
