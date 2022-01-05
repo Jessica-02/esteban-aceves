@@ -498,6 +498,66 @@
   stroke: #fff;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .container-header .header-section .header-text .title-container {
+    width: 45%;
+    top: 7%;
+    right: 10%;
+  }
+  .container-header .header-section,
+  .container-header::before,
+  .container-header {
+    height: 80vh;
+  }
+  .container-header .header-section .header-img img {
+    width: 270px;
+  }
+  .container-header .header-section .header-text .horizontal-text p {
+    width: 100%;
+  }
+  .header-section {
+    max-width: 95% !important;
+  }
+  .designer div h2, .dancer div h2, .entrepreneur div h2, .traveler div h2 {
+    left: 430px !important;
+  }
+  .designer div:nth-child(2) {
+    background-size: 350px !important;
+  }
+  .about {
+    height: 500px;
+  }
+  .about .designer div {
+    height: 445px;
+    left: -20px;
+  }
+  .about .designer div h2 {
+    line-height: 340px;
+  }
+  .about .dancer div h2 {
+    line-height: 440px;
+  }
+  .about .entrepreneur div h2 {
+    line-height: 540px;
+  }
+  .about .traveler div h2 {
+    line-height: 640px;
+  }
+  .img-viajes img {
+    margin-left: -100px;
+  }
+  .img-blog {
+    margin-right: -100px;
+  }
+  .blog-container .blog .tex-viajes p,
+  .blog-right .tex-blog-right {
+    width: 95%;
+  }
+  .tienda .tienda-text {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header-img {
     display: none;
