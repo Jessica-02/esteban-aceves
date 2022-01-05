@@ -47,6 +47,7 @@
                 font-size: 23px;
                 font-weight: 100;
                 position: relative;
+                width: 72%;
             }
 
             .title-container{
@@ -224,6 +225,7 @@
         .tex-viajes p{
             margin-left: 20px;
             margin-bottom: 60px;
+            width: 60%;
         }
         .btn-viajes{
             transform: translate(16%, -50px);
@@ -242,6 +244,7 @@
     justify-content: end;
     .tex-blog-right{
         text-align: right;
+        width: 60%;
     }
     .tex-blog-right h3{
         margin-right: -60px;
@@ -465,6 +468,11 @@
     .container-header .header-section .header-text .vertical-text h2{
         margin-left: 0;
     }
+    .container-header .header-section .header-text .horizontal-text p,
+    .blog-container .blog .tex-viajes p,
+    .blog-right .tex-blog-right{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 640px){
     
@@ -497,7 +505,7 @@
     }
     .about .designer div{
         top: -85px;
-        left: 12px;
+        left: -10px;
     }
     .about .designer div{
         width: 100%;
