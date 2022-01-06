@@ -199,6 +199,7 @@
             font-size: 50px;
             font-weight: 900;
             text-transform: uppercase;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
             span{
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-fill-color: transparent;
@@ -250,6 +251,7 @@
         margin-right: -60px;
         margin-bottom: 30px;
         position: relative;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
         &::after{
             position: absolute;
             content: "";
@@ -404,7 +406,6 @@
 
 
 // Responsive 
-
 @media screen and (min-width: 769px) and (max-width: 1080px){
     .container-header .header-section .header-text .title-container{
         width: 45%;
@@ -464,9 +465,6 @@
         width: 60%;
     }
 }
-
-
-
 @media screen and (min-width: 320px) and (max-width: 768px){
     .header-img{
         display: none;

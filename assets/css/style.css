@@ -254,6 +254,7 @@
   font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
 }
 
 .blog-container .blog .text-blog h3 span {
@@ -320,6 +321,7 @@
   margin-right: -60px;
   margin-bottom: 30px;
   position: relative;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
 }
 
 .blog-right .tex-blog-right h3::after {
