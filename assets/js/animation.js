@@ -27,3 +27,4 @@ function parallax(e){
     Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
   });
 }
+
