@@ -24,46 +24,31 @@ body {
   font-size: 70px;
 }
 
-.container-header {
-  width: 100%;
-  height: 100vh;
-  background: #171918 url(../img/fondo.png) no-repeat center center/cover;
-  position: relative;
+p {
+  font-size: 23px;
 }
 
-.container-header .logo img {
+body {
+  background-color: #171918;
+}
+
+.header {
+  background-color: #171918;
+}
+
+.header .logo img {
   width: 100px;
 }
 
-.container-header .header-section {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.estebanAceves {
+  background: #171918 url(../img/fondo.png) no-repeat center;
 }
 
-.container-header .header-section .header-img img {
+.estebanAceves .esteban-img img {
   width: 500px;
 }
 
-.container-header .header-section .header-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  margin-top: 100px;
-}
-
-.container-header .header-section .header-text .vertical-text h2 {
+.estebanAceves .hi {
   font-size: 50px;
   font-weight: 900;
   -webkit-writing-mode: vertical-lr;
@@ -74,7 +59,7 @@ body {
   margin-right: 10px;
 }
 
-.container-header .header-section .header-text .vertical-text h2::after {
+.estebanAceves .hi::after {
   position: absolute;
   content: "";
   bottom: 35px;
@@ -86,22 +71,16 @@ body {
           transform: rotate(90deg);
 }
 
-.container-header .header-section .header-text .horizontal-text p {
-  font-size: 23px;
-  font-weight: 100;
+.estebanAceves .text-esteban {
   position: relative;
-  width: 72%;
 }
 
-.container-header .header-section .header-text .title-container {
+.estebanAceves .text-esteban .title {
   position: absolute;
-  top: 130px;
-  right: 330px;
-  width: 30%;
-}
-
-.container-header .header-section .header-text .title-container .title {
   font-size: 0;
+  bottom: 175px;
+  left: 55px;
+  width: 60%;
 }
 
 .container-header::before {
@@ -159,7 +138,10 @@ body {
   z-index: 1;
 }
 
-.about .designer div h2, .about .dancer div h2, .about .entrepreneur div h2, .about .traveler div h2 {
+.about .designer div h2,
+.about .dancer div h2,
+.about .entrepreneur div h2,
+.about .traveler div h2 {
   position: absolute;
   left: 800px;
   font-size: 70px;
@@ -188,14 +170,14 @@ body {
 .about .dancer div h2 {
   -webkit-animation: animate 14s linear infinite;
           animation: animate 14s linear infinite;
-  color: #57D7FF;
+  color: #57d7ff;
   line-height: 605px;
 }
 
 .about .dancer div:nth-child(2) h2,
 .about .traveler div:nth-child(2) h2 {
   -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: #57D7FF;
+  -webkit-text-stroke-color: #57d7ff;
   -webkit-text-stroke-width: 1px;
   color: transparent;
   z-index: 5;
@@ -209,7 +191,7 @@ body {
 }
 
 .about .traveler div h2 {
-  color: #57D7FF;
+  color: #57d7ff;
   line-height: 880px;
   -webkit-animation: animate 10s linear infinite;
           animation: animate 10s linear infinite;
@@ -373,7 +355,7 @@ body {
   left: 0;
   width: 100px;
   height: 7px;
-  background-color: #57D7FF;
+  background-color: #57d7ff;
 }
 
 .blog-container .blog .text-blog p {
@@ -413,6 +395,8 @@ body {
 .blog-right .tex-blog-right {
   text-align: right;
   width: 60%;
+  position: relative;
+  z-index: 10;
 }
 
 .blog-right .tex-blog-right {
@@ -487,6 +471,27 @@ body {
   }
 }
 
+.blog-right .tex-blog-right .heart-wrap-blog {
+  position: absolute;
+  top: -20px;
+  left: 300px;
+  width: 40%;
+  height: 100%;
+}
+
+.blog-right .tex-blog-right .heart-blog {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 830px;
+  min-width: 1920px;
+  pointer-events: none;
+  -webkit-transform: translate3d(-70%, 0, 0);
+          transform: translate3d(-70%, 0, 0);
+}
+
 .blog-right .tex-blog-right h3 {
   margin-right: -60px;
   margin-bottom: 30px;
@@ -501,7 +506,7 @@ body {
   right: 0;
   width: 100px;
   height: 7px;
-  background-color: #57D7FF;
+  background-color: #57d7ff;
 }
 
 .blog-right .tex-blog-right p {
@@ -642,7 +647,7 @@ body {
 }
 
 .btn-general:hover {
-  color: #57D7FF;
+  color: #57d7ff;
 }
 
 .btn-general svg,
@@ -656,7 +661,7 @@ body {
 }
 
 .btn-general svg rect {
-  stroke: #57D7FF;
+  stroke: #57d7ff;
   stroke-width: 4;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -690,7 +695,10 @@ body {
   .header-section {
     max-width: 95% !important;
   }
-  .designer div h2, .dancer div h2, .entrepreneur div h2, .traveler div h2 {
+  .designer div h2,
+  .dancer div h2,
+  .entrepreneur div h2,
+  .traveler div h2 {
     left: 430px !important;
   }
   .designer div:nth-child(2) {
@@ -728,7 +736,8 @@ body {
   .tienda .tienda-text {
     width: 60%;
   }
-  .blob-blog, .blob-viajes {
+  .blob-blog,
+  .blob-viajes {
     display: none;
   }
 }
@@ -737,7 +746,10 @@ body {
   .header-img {
     display: none;
   }
-  .designer div h2, .dancer div h2, .entrepreneur div h2, .traveler div h2 {
+  .designer div h2,
+  .dancer div h2,
+  .entrepreneur div h2,
+  .traveler div h2 {
     left: 220px !important;
   }
   .footer-content {
@@ -751,7 +763,9 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .blog-container, .tienda, .blog {
+  .blog-container,
+  .tienda,
+  .blog {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -768,18 +782,23 @@ body {
   .text-blog {
     text-align: center !important;
   }
-  .text-blog p, .tex-blog-right h3, .blog .tex-viajes h3 {
+  .text-blog p,
+  .tex-blog-right h3,
+  .blog .tex-viajes h3 {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
-  .tex-blog-right h3, .blog .tex-viajes h3 {
+  .tex-blog-right h3,
+  .blog .tex-viajes h3 {
     margin-top: -120px;
     font-size: 40px !important;
   }
-  .blog-container .blog .tex-viajes h3::after, .blog-right .tex-blog-right h3::after {
+  .blog-container .blog .tex-viajes h3::after,
+  .blog-right .tex-blog-right h3::after {
     display: none;
   }
-  .blog-container .blog .btn-viajes, .blog-right .btn-blog {
+  .blog-container .blog .btn-viajes,
+  .blog-right .btn-blog {
     -webkit-transform: translate(-50%, -50px);
             transform: translate(-50%, -50px);
   }
@@ -808,7 +827,10 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
-  .designer div h2, .dancer div h2, .entrepreneur div h2, .traveler div h2 {
+  .designer div h2,
+  .dancer div h2,
+  .entrepreneur div h2,
+  .traveler div h2 {
     left: 120px !important;
     font-size: 35px !important;
   }
@@ -818,7 +840,8 @@ body {
   .about {
     height: 470px;
   }
-  .blog-container .blog-text h2, .tienda h2 {
+  .blog-container .blog-text h2,
+  .tienda h2 {
     font-size: 80px;
   }
   .tienda h2 {
