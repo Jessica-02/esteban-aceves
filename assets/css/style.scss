@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700");
 @import "./partials/_esteban.scss";
+@import "./partials/responsive";
 
 //General
 p {
   font-size: 23px;
-}
-body {
-  background-color: #171918;
+  font-weight: 100;
 }
 //Header
 .header {
@@ -15,11 +14,22 @@ body {
     width: 100px;
   }
 }
-
+//======================================= Esteban Aceves =======================================
+.estebanAceves::before {
+  content: "";
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
+}
 .estebanAceves {
+  position: relative;
   background: #171918 url(../img/fondo.png) no-repeat center;
   .esteban-img img {
-    width: 500px;
+    margin-top: 50px;
+    width: 500px !important;
   }
   .hi {
     font-size: 50px;
@@ -40,384 +50,266 @@ body {
         transform: rotate(90deg);
     }
   }
-  .text-esteban{
-    position: relative;
-
+  .title-container{
+    margin-left: 105px;
     .title{
-        position: absolute;
-        font-size: 0;
-        bottom:175px;
-        left: 55px;
-        width: 60%;
-        }
-    }
-}
-//             .horizontal-text p{
-//                 font-size: 23px;
-//                 font-weight: 100;
-//                 position: relative;
-//                 width: 72%;
-//             }
-
-//             .title-container{
-//                 position: absolute;
-//                 top: 130px;
-//                 right: 330px;
-//                 width: 30%;
-//                 .title{
-//                     font-size: 0;
-//                 }
-//             }
-//         }
-//     }
-// }
-.container-header::before {
-  content: "";
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: linear-gradient(hsla(150, 4%, 9%, 0), hsl(150, 4%, 9%));
+      font-size: 0;
+      width: 60%;
+      }
+  }
+  
 }
 
-//seccion 2 - About
-.about {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  display: flex;
-  overflow: hidden;
+//============================================= ABOUT =======================================
+.about-container{
   background-color: #171918;
-
-  .diamonds img {
-    position: absolute;
-    object-fit: cover;
-    width: 15%;
-  }
-  .diamond-1 {
-    top: -5px;
-    right: 0;
-  }
-  .diamond-2 {
-    top: 150px;
-    left: 15px;
-  }
-
-  .designer div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
+  .about {
+    position: relative;
     height: 600px;
-  }
-  .designer div:nth-child(2) {
-    background: url(../img/esteban-about.png);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: 1;
-  }
-
-  .designer div h2,
-  .dancer div h2,
-  .entrepreneur div h2,
-  .traveler div h2 {
-    position: absolute;
-    left: 800px;
-    font-size: 70px;
-    font-weight: 900;
-    text-transform: uppercase;
-    cursor: default;
-    white-space: nowrap;
-  }
-
-  .designer div h2 {
-    color: #fff;
-    line-height: 470px;
-    animation: animate 10s linear infinite;
-  }
-  .designer div:nth-child(2) h2,
-  .entrepreneur div:nth-child(2) h2 {
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 1px;
-    color: transparent;
-    z-index: 5;
-  }
-
-  .dancer div h2 {
-    animation: animate 14s linear infinite;
-    color: #57d7ff;
-    line-height: 605px;
-  }
-  .dancer div:nth-child(2) h2,
-  .traveler div:nth-child(2) h2 {
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #57d7ff;
-    -webkit-text-stroke-width: 1px;
-    color: transparent;
-    z-index: 5;
-  }
-  .entrepreneur div h2 {
-    color: #fff;
-    animation: animate 8s linear infinite;
-    line-height: 740px;
-  }
-  .traveler div h2 {
-    color: #57d7ff;
-    line-height: 880px;
-    animation: animate 10s linear infinite;
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateX(0);
+  
+    // .diamonds img {
+    //   position: absolute;
+    //   object-fit: cover;
+    //   width: 15%;
+    // }
+    // .diamond-1 {
+    //   top: -5px;
+    //   right: 0;
+    // }
+    // .diamond-2 {
+    //   top: 150px;
+    //   left: 15px;
+    // }
+  
+    .designer div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 600px;
     }
-    50% {
-      transform: translateX(-50%);
+    .designer div:nth-child(2) {
+      background: url(../img/esteban-about.png);
+      background-size: 500px;
+      background-repeat: no-repeat;
+      background-position: right;
+      z-index: 1;
+    }
+  
+    .designer div h2,
+    .dancer div h2,
+    .entrepreneur div h2,
+    .traveler div h2 {
+      position: absolute;
+      left: 800px;
+      font-size: 70px;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: default;
+      white-space: nowrap;
+    }
+  
+    .designer div h2 {
+      color: #fff;
+      line-height: 470px;
+      animation: animate 10s linear infinite;
+    }
+    .designer div:nth-child(2) h2,
+    .entrepreneur div:nth-child(2) h2 {
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: 1px;
+      color: transparent;
+      z-index: 5;
+    }
+  
+    .dancer div h2 {
+      animation: animate 14s linear infinite;
+      color: #57d7ff;
+      line-height: 605px;
+    }
+    .dancer div:nth-child(2) h2,
+    .traveler div:nth-child(2) h2 {
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: #57d7ff;
+      -webkit-text-stroke-width: 1px;
+      color: transparent;
+      z-index: 5;
+    }
+    .entrepreneur div h2 {
+      color: #fff;
+      animation: animate 8s linear infinite;
+      line-height: 740px;
+    }
+    .traveler div h2 {
+      color: #57d7ff;
+      line-height: 880px;
+      animation: animate 10s linear infinite;
+    }
+  
+    @keyframes animate {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-50%);
+      }
     }
   }
 }
 
-// Seccion 3 - Blogs - Viajes
-.blog-container {
-  width: 100%;
+// ================================ VIAJES ========================================
+.viajes-container{
   background-color: #171918;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 50px 10px 0 10px;
-
-  .blog-text h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .viajes-title{
     font-weight: 900;
-    text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 120px;
     color: hsla(194, 100%, 67%, 0.075);
-  }
-  .title-viajes h2 {
     margin-left: 0;
   }
-
-  .blog {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    .text-blog h3 {
-      font-size: 50px;
-      font-weight: 900;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
-      span {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-    .tex-viajes {
-      position: relative;
-      z-index: 10;
-      //Animacion bloobs
-      .blob-viajes {
-        position: absolute;
-        top: 0;
-        right: 200px;
-        fill: hsla(194, 100%, 67%, 0.212);
-        width: 20vmax;
-        z-index: -1;
-        animation: move-viajes 15s ease-in-out infinite;
-        transform-origin: 50% 40%;
-      }
-      @keyframes move-viajes {
-        0% {
-          transform: scale(1) translate(10px, -130px);
-        }
-        38% {
-          transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-        }
-        40% {
-          transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-        }
-        78% {
-          transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-        }
-        80% {
-          transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-        }
-        100% {
-          transform: scale(1) translate(10px, -130px);
-        }
-      }
-
-      // @keyframes move {
-      //     0%   { transform: scale(1)   translate(10px, -30px); }
-      //     38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
-      //     40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
-      //     78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
-      //     80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
-      //     100% { transform: scale(1)   translate(10px, -30px); }
-      // }
-    }
-    .tex-viajes h3 {
-      margin-left: -60px;
-      position: relative;
-      margin-bottom: 30px;
-    }
-    .tex-viajes h3::after {
-      position: absolute;
-      content: "";
-      bottom: -5px;
-      left: 0;
-      width: 100px;
-      height: 7px;
-      background-color: #57d7ff;
-    }
-    .text-blog p {
-      font-size: 23px;
-      font-weight: 100;
-    }
-    .tex-viajes p {
-      margin-left: 20px;
-      margin-bottom: 60px;
-      width: 60%;
-    }
-    .btn-viajes {
-      transform: translate(16%, -50px);
-    }
-  }
-}
-.blog-img img {
-  width: 300px;
-}
-.blog-container-rigth {
-  flex-direction: row-reverse;
-  padding-bottom: 100px;
-}
-//Seccion 4 Blog
-.blog-right {
-  justify-content: end;
-
-  .tex-blog-right {
-    text-align: right;
-    width: 60%;
-    position: relative;
-    z-index: 10;
-  }
-  .tex-blog-right {
-    position: relative;
-    z-index: 10;
-    .blob-blog {
-      position: absolute;
-      top: 25px;
-      left: -150px;
-      fill: hsla(194, 100%, 67%, 0.212);
-      width: 17vmax;
-      z-index: -1;
-      animation: move 9s ease-in-out infinite;
-      transform-origin: 10% 60%;
-    }
-    @keyframes move {
-      0% {
-        transform: scale(1) translate(10px, -30px);
-      }
-      38% {
-        transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-      }
-      40% {
-        transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-      }
-      78% {
-        transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-      }
-      80% {
-        transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-      }
-      100% {
-        transform: scale(1) translate(10px, -30px);
-      }
-    }
-
-    .heart-wrap-blog {
-      position: absolute;
-      top: -20px;
-      left: 300px;
-      width: 40%;
-      height: 100%;
-    }
-
-    .heart-blog {
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 830px;
-      min-width: 1920px;
-      pointer-events: none;
-      transform: translate3d(-70%, 0, 0);
-    }
-  }
-  .tex-blog-right h3 {
-    margin-right: -60px;
-    margin-bottom: 30px;
-    position: relative;
+  .viaje-text{
+    font-weight: 900;
+    font-size: 60px;
+    margin-left: -100px;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -5px;
-      right: 0;
-      width: 100px;
-      height: 7px;
-      background-color: #57d7ff;
+    span{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: transparent;
+    }
+    p{
+      position: relative;
+      z-index: 5;
     }
   }
-  .tex-blog-right p {
-    margin-right: 20px;
-    margin-bottom: 60px;
+  .viaje-text::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #57d7ff;
   }
-  .btn-blog {
-    transform: translate(-116%, -50px);
+  .blob-viajes {
+    position: absolute;
+    right: 150px;
+    fill: hsla(194, 100%, 67%, 0.212);
+    width: 17vmax;
+    z-index: 1;
+    animation: move-viajes 15s ease-in-out infinite;
+    transform-origin: 50% 40%;
+  }
+  @keyframes move-viajes {
+    0% {
+      transform: scale(1) translate(10px, -130px);
+    }
+    38% {
+      transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+    }
+    40% {
+      transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+    }
+    80% {
+      transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+    }
+    100% {
+      transform: scale(1) translate(10px, -130px);
+    }
   }
 }
-.title-blog h2 {
-  margin-right: 10px;
+
+//================================ BLOG =================================
+.container-blog{
+  background-color: #171918;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  .blog-title{
+    font-weight: 900;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 120px;
+    color: hsla(194, 100%, 67%, 0.075);
+    margin-left: 0;
+    position: relative;
+  }
+  .blog-text{
+    font-weight: 900;
+    font-size: 60px;
+    margin-left: -100px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+    margin-right:-200px;
+    span{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .blog-text::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #57d7ff;
+  }
+  .texts-blog{
+    position: relative;
+  }
+  .texts-blog p{
+    margin-right: -115px;
+  }
+
+  .heart-wrap-blog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+  }
+
+  .heart-blog {
+    height: 830px;
+    pointer-events: none;
+    transform: translate3d(-25%, 0, 0);
+    width: 700px;
+  }
+  .btn-blog{
+    margin-left: -17px;
+  }
 }
+
+
+
+
+
 
 //Seccion 5 Tienda
 .tienda {
   width: 100%;
   height: 600px;
-  background: #171918 url(../img/fondo-tienda.png) no-repeat center center /
-    cover;
+  background: #171918 url(../img/fondo-tienda.png) no-repeat center center /cover;
   color: #fff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   h2 {
+    margin-top: -70px;
     text-transform: uppercase;
     font-size: 120px;
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
-    position: absolute;
-    top: -95px;
-    left: 160px;
   }
   .tienda-text {
-    width: 30%;
+    margin-top: 80px;
+    width: 40%;
     text-align: center;
-    p {
-      font-weight: 100;
-      font-size: 23px;
-    }
     .btn-tienda {
       width: 200px;
-      transform: translate(-50%, -10px);
+      transform: translate(-50%, 0);
     }
     .btn-tienda svg,
     .btn-tienda svg rect {
@@ -432,42 +324,19 @@ body {
 //Footer
 .contacto-container {
   background-color: #171918;
-  color: #fff;
   padding-top: 40px;
   padding-bottom: 20px;
-  position: relative;
-
-  .title {
-    font-weight: 900;
-    font-size: 200px;
-    text-transform: uppercase;
-    color: hsla(194, 100%, 67%, 0.034);
-    position: absolute;
-    top: -55px;
-    left: 200px;
+  .logo {
+    width: 200px;
+    height: 100px;
   }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .logo {
-      width: 200px;
-      height: 100px;
-    }
-
-    .contacto-texts {
-      line-height: 0;
-    }
-
-    .social-media .fab {
-      font-size: 30px;
-      margin-left: 10px;
-    }
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
   }
   .copy {
-    text-align: center;
     margin-top: 30px;
     .webcastell {
       text-decoration: none;
@@ -492,6 +361,9 @@ body {
 .btn-general:hover {
   color: #57d7ff;
 }
+.texts-blog h3, .texts-blog p{
+  text-align: right;
+}
 
 .btn-general svg,
 .btn-general svg rect {
@@ -513,197 +385,4 @@ body {
   stroke-dasharray: 100, 305;
   stroke-dashoffset: 220;
   stroke: #fff;
-}
-
-// Responsive
-@media screen and (min-width: 769px) and (max-width: 1080px) {
-  .container-header .header-section .header-text .title-container {
-    width: 45%;
-    top: 7%;
-    right: 10%;
-  }
-  .container-header .header-section,
-  .container-header::before,
-  .container-header {
-    height: 80vh;
-  }
-  .container-header .header-section .header-img img {
-    width: 270px;
-  }
-  .container-header .header-section .header-text .horizontal-text p {
-    width: 100%;
-  }
-  .header-section {
-    max-width: 95% !important;
-  }
-  .designer div h2,
-  .dancer div h2,
-  .entrepreneur div h2,
-  .traveler div h2 {
-    left: 430px !important;
-  }
-  .designer div:nth-child(2) {
-    background-size: 410px !important;
-  }
-  .about {
-    height: 500px;
-  }
-  .about .designer div {
-    height: 445px;
-    left: -20px;
-  }
-  .about .designer div h2 {
-    line-height: 310px;
-  }
-  .about .dancer div h2 {
-    line-height: 440px;
-  }
-  .about .entrepreneur div h2 {
-    line-height: 565px;
-  }
-  .about .traveler div h2 {
-    line-height: 690px;
-  }
-  .img-viajes img {
-    margin-left: -100px;
-  }
-  .img-blog {
-    margin-right: -100px;
-  }
-  .blog-container .blog .tex-viajes p,
-  .blog-right .tex-blog-right {
-    width: 95%;
-  }
-  .tienda .tienda-text {
-    width: 60%;
-  }
-  .blob-blog,
-  .blob-viajes {
-    display: none;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .header-img {
-    display: none;
-  }
-  .designer div h2,
-  .dancer div h2,
-  .entrepreneur div h2,
-  .traveler div h2 {
-    left: 220px !important;
-  }
-  .footer-content {
-    flex-direction: column;
-    .contacto-texts {
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
-  .blog-container,
-  .tienda,
-  .blog {
-    flex-direction: column;
-  }
-  .blog-container .blog-text h2 {
-    font-weight: 900;
-    writing-mode: horizontal-tb;
-    transform: rotate(0deg);
-  }
-  .text-blog {
-    text-align: center !important;
-  }
-  .text-blog p,
-  .tex-blog-right h3,
-  .blog .tex-viajes h3 {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
-  .tex-blog-right h3,
-  .blog .tex-viajes h3 {
-    margin-top: -120px;
-    font-size: 40px !important;
-  }
-  .blog-container .blog .tex-viajes h3::after,
-  .blog-right .tex-blog-right h3::after {
-    display: none;
-  }
-  .blog-container .blog .btn-viajes,
-  .blog-right .btn-blog {
-    transform: translate(-50%, -50px);
-  }
-  .tienda h2 {
-    left: 10px;
-  }
-  .tienda .tienda-text {
-    width: 90%;
-  }
-  .container-header .header-section .header-text .title-container {
-    width: 80%;
-    left: 18%;
-    top: 25px;
-  }
-  .container-header {
-    height: 80vh;
-  }
-  .container-header .header-section .header-text .vertical-text h2 {
-    margin-left: 0;
-  }
-  .container-header .header-section .header-text .horizontal-text p,
-  .blog-container .blog .tex-viajes p,
-  .blog-right .tex-blog-right {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 640px) {
-  .designer div h2,
-  .dancer div h2,
-  .entrepreneur div h2,
-  .traveler div h2 {
-    left: 120px !important;
-    font-size: 35px !important;
-  }
-  .designer div:nth-child(2) {
-    background-size: 350px !important;
-  }
-  .about {
-    height: 470px;
-  }
-  .blog-container .blog-text h2,
-  .tienda h2 {
-    font-size: 80px;
-  }
-  .tienda h2 {
-    top: -55px;
-  }
-  .vertical-text h2 {
-    display: none;
-  }
-  .container-header .header-section .header-text .title-container {
-    left: 16%;
-    top: 10%;
-  }
-  .container-header .header-section .header-text {
-    margin-top: 0;
-    text-align: center;
-  }
-  .about .designer div {
-    top: -85px;
-    left: -10px;
-  }
-  .about .designer div {
-    width: 100%;
-  }
-  .about .designer div h2 {
-    line-height: 500px;
-  }
-  .about .dancer div h2 {
-    line-height: 410px;
-  }
-  .about .entrepreneur div h2 {
-    line-height: 490px;
-  }
-  .about .traveler div h2 {
-    line-height: 570px;
-  }
 }

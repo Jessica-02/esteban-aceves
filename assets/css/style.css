@@ -24,677 +24,7 @@ body {
   font-size: 70px;
 }
 
-p {
-  font-size: 23px;
-}
-
-body {
-  background-color: #171918;
-}
-
-.header {
-  background-color: #171918;
-}
-
-.header .logo img {
-  width: 100px;
-}
-
-.estebanAceves {
-  background: #171918 url(../img/fondo.png) no-repeat center;
-}
-
-.estebanAceves .esteban-img img {
-  width: 500px;
-}
-
-.estebanAceves .hi {
-  font-size: 50px;
-  font-weight: 900;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  text-transform: uppercase;
-  position: relative;
-  margin-right: 10px;
-}
-
-.estebanAceves .hi::after {
-  position: absolute;
-  content: "";
-  bottom: 35px;
-  right: 20px;
-  width: 80px;
-  height: 7px;
-  background-color: #57D7FF;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.estebanAceves .text-esteban {
-  position: relative;
-}
-
-.estebanAceves .text-esteban .title {
-  position: absolute;
-  font-size: 0;
-  bottom: 175px;
-  left: 55px;
-  width: 60%;
-}
-
-.container-header::before {
-  content: "";
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 24, 23, 0)), to(#161817));
-  background: linear-gradient(rgba(22, 24, 23, 0), #161817);
-}
-
-.about {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  background-color: #171918;
-}
-
-.about .diamonds img {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 15%;
-}
-
-.about .diamond-1 {
-  top: -5px;
-  right: 0;
-}
-
-.about .diamond-2 {
-  top: 150px;
-  left: 15px;
-}
-
-.about .designer div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 600px;
-}
-
-.about .designer div:nth-child(2) {
-  background: url(../img/esteban-about.png);
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: right;
-  z-index: 1;
-}
-
-.about .designer div h2,
-.about .dancer div h2,
-.about .entrepreneur div h2,
-.about .traveler div h2 {
-  position: absolute;
-  left: 800px;
-  font-size: 70px;
-  font-weight: 900;
-  text-transform: uppercase;
-  cursor: default;
-  white-space: nowrap;
-}
-
-.about .designer div h2 {
-  color: #fff;
-  line-height: 470px;
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
-}
-
-.about .designer div:nth-child(2) h2,
-.about .entrepreneur div:nth-child(2) h2 {
-  -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 1px;
-  color: transparent;
-  z-index: 5;
-}
-
-.about .dancer div h2 {
-  -webkit-animation: animate 14s linear infinite;
-          animation: animate 14s linear infinite;
-  color: #57d7ff;
-  line-height: 605px;
-}
-
-.about .dancer div:nth-child(2) h2,
-.about .traveler div:nth-child(2) h2 {
-  -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: #57d7ff;
-  -webkit-text-stroke-width: 1px;
-  color: transparent;
-  z-index: 5;
-}
-
-.about .entrepreneur div h2 {
-  color: #fff;
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
-  line-height: 740px;
-}
-
-.about .traveler div h2 {
-  color: #57d7ff;
-  line-height: 880px;
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-@keyframes animate {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-.blog-container {
-  width: 100%;
-  background-color: #171918;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 10px 0 10px;
-}
-
-.blog-container .blog-text h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  font-size: 120px;
-  color: rgba(87, 216, 255, 0.075);
-}
-
-.blog-container .title-viajes h2 {
-  margin-left: 0;
-}
-
-.blog-container .blog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.blog-container .blog .text-blog h3 {
-  font-size: 50px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
-}
-
-.blog-container .blog .text-blog h3 span {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: transparent;
-}
-
-.blog-container .blog .tex-viajes {
-  position: relative;
-  z-index: 10;
-}
-
-.blog-container .blog .tex-viajes .blob-viajes {
-  position: absolute;
-  top: 0;
-  right: 200px;
-  fill: rgba(87, 216, 255, 0.212);
-  width: 20vmax;
-  z-index: -1;
-  -webkit-animation: move-viajes 15s ease-in-out infinite;
-          animation: move-viajes 15s ease-in-out infinite;
-  -webkit-transform-origin: 50% 40%;
-          transform-origin: 50% 40%;
-}
-
-@-webkit-keyframes move-viajes {
-  0% {
-    -webkit-transform: scale(1) translate(10px, -130px);
-            transform: scale(1) translate(10px, -130px);
-  }
-  38% {
-    -webkit-transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-            transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-  }
-  40% {
-    -webkit-transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-            transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-  }
-  78% {
-    -webkit-transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-            transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-  }
-  80% {
-    -webkit-transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-            transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(10px, -130px);
-            transform: scale(1) translate(10px, -130px);
-  }
-}
-
-@keyframes move-viajes {
-  0% {
-    -webkit-transform: scale(1) translate(10px, -130px);
-            transform: scale(1) translate(10px, -130px);
-  }
-  38% {
-    -webkit-transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-            transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-  }
-  40% {
-    -webkit-transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-            transform: scale(0.8, 1) translate(-80px, 70px) rotate(160deg);
-  }
-  78% {
-    -webkit-transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-            transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-  }
-  80% {
-    -webkit-transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-            transform: scale(1.3) translate(110px, 10px) rotate(-20deg);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(10px, -130px);
-            transform: scale(1) translate(10px, -130px);
-  }
-}
-
-.blog-container .blog .tex-viajes h3 {
-  margin-left: -60px;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.blog-container .blog .tex-viajes h3::after {
-  position: absolute;
-  content: "";
-  bottom: -5px;
-  left: 0;
-  width: 100px;
-  height: 7px;
-  background-color: #57d7ff;
-}
-
-.blog-container .blog .text-blog p {
-  font-size: 23px;
-  font-weight: 100;
-}
-
-.blog-container .blog .tex-viajes p {
-  margin-left: 20px;
-  margin-bottom: 60px;
-  width: 60%;
-}
-
-.blog-container .blog .btn-viajes {
-  -webkit-transform: translate(16%, -50px);
-          transform: translate(16%, -50px);
-}
-
-.blog-img img {
-  width: 300px;
-}
-
-.blog-container-rigth {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  padding-bottom: 100px;
-}
-
-.blog-right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.blog-right .tex-blog-right {
-  text-align: right;
-  width: 60%;
-  position: relative;
-  z-index: 10;
-}
-
-.blog-right .tex-blog-right {
-  position: relative;
-  z-index: 10;
-}
-
-.blog-right .tex-blog-right .blob-blog {
-  position: absolute;
-  top: 25px;
-  left: -150px;
-  fill: rgba(87, 216, 255, 0.212);
-  width: 17vmax;
-  z-index: -1;
-  -webkit-animation: move 9s ease-in-out infinite;
-          animation: move 9s ease-in-out infinite;
-  -webkit-transform-origin: 10% 60%;
-          transform-origin: 10% 60%;
-}
-
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform: scale(1) translate(10px, -30px);
-            transform: scale(1) translate(10px, -30px);
-  }
-  38% {
-    -webkit-transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-            transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-  }
-  40% {
-    -webkit-transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-            transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-  }
-  78% {
-    -webkit-transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-            transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-  }
-  80% {
-    -webkit-transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-            transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(10px, -30px);
-            transform: scale(1) translate(10px, -30px);
-  }
-}
-
-@keyframes move {
-  0% {
-    -webkit-transform: scale(1) translate(10px, -30px);
-            transform: scale(1) translate(10px, -30px);
-  }
-  38% {
-    -webkit-transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-            transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-  }
-  40% {
-    -webkit-transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-            transform: scale(0.7, 1) translate(-110px, -20px) rotate(120deg);
-  }
-  78% {
-    -webkit-transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-            transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-  }
-  80% {
-    -webkit-transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-            transform: scale(1.3) translate(-110px, -10px) rotate(20deg);
-  }
-  100% {
-    -webkit-transform: scale(1) translate(10px, -30px);
-            transform: scale(1) translate(10px, -30px);
-  }
-}
-
-.blog-right .tex-blog-right .heart-wrap-blog {
-  position: absolute;
-  top: -20px;
-  left: 300px;
-  width: 40%;
-  height: 100%;
-}
-
-.blog-right .tex-blog-right .heart-blog {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 830px;
-  min-width: 1920px;
-  pointer-events: none;
-  -webkit-transform: translate3d(-70%, 0, 0);
-          transform: translate3d(-70%, 0, 0);
-}
-
-.blog-right .tex-blog-right h3 {
-  margin-right: -60px;
-  margin-bottom: 30px;
-  position: relative;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
-}
-
-.blog-right .tex-blog-right h3::after {
-  position: absolute;
-  content: "";
-  bottom: -5px;
-  right: 0;
-  width: 100px;
-  height: 7px;
-  background-color: #57d7ff;
-}
-
-.blog-right .tex-blog-right p {
-  margin-right: 20px;
-  margin-bottom: 60px;
-}
-
-.blog-right .btn-blog {
-  -webkit-transform: translate(-116%, -50px);
-          transform: translate(-116%, -50px);
-}
-
-.title-blog h2 {
-  margin-right: 10px;
-}
-
-.tienda {
-  width: 100%;
-  height: 600px;
-  background: #171918 url(../img/fondo-tienda.png) no-repeat center center/cover;
-  color: #fff;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tienda h2 {
-  text-transform: uppercase;
-  font-size: 120px;
-  font-weight: 900;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  top: -95px;
-  left: 160px;
-}
-
-.tienda .tienda-text {
-  width: 30%;
-  text-align: center;
-}
-
-.tienda .tienda-text p {
-  font-weight: 100;
-  font-size: 23px;
-}
-
-.tienda .tienda-text .btn-tienda {
-  width: 200px;
-  -webkit-transform: translate(-50%, -10px);
-          transform: translate(-50%, -10px);
-}
-
-.tienda .tienda-text .btn-tienda svg,
-.tienda .tienda-text .btn-tienda svg rect {
-  width: 200px;
-}
-
-.tienda .tienda-text .btn-tienda:hover svg rect {
-  stroke-dasharray: 100, 410;
-}
-
-.contacto-container {
-  background-color: #171918;
-  color: #fff;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.contacto-container .title {
-  font-weight: 900;
-  font-size: 200px;
-  text-transform: uppercase;
-  color: rgba(87, 216, 255, 0.034);
-  position: absolute;
-  top: -55px;
-  left: 200px;
-}
-
-.contacto-container .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacto-container .footer-content .logo {
-  width: 200px;
-  height: 100px;
-}
-
-.contacto-container .footer-content .contacto-texts {
-  line-height: 0;
-}
-
-.contacto-container .footer-content .social-media .fab {
-  font-size: 30px;
-  margin-left: 10px;
-}
-
-.contacto-container .copy {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.contacto-container .copy .webcastell {
-  text-decoration: none;
-  color: #57d8ffcb;
-  font-weight: 500;
-}
-
-.btn-general {
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  line-height: 37px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: #fff;
-  text-decoration: none;
-  position: absolute;
-}
-
-.btn-general:hover {
-  color: #57d7ff;
-}
-
-.btn-general svg,
-.btn-general svg rect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-}
-
-.btn-general svg rect {
-  stroke: #57d7ff;
-  stroke-width: 4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  stroke-dasharray: 500, 500;
-  stroke-dashoffset: 0;
-}
-
-.btn-general:hover svg rect {
-  stroke-dasharray: 100, 305;
-  stroke-dashoffset: 220;
-  stroke: #fff;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-  .container-header .header-section .header-text .title-container {
-    width: 45%;
-    top: 7%;
-    right: 10%;
-  }
-  .container-header .header-section,
-  .container-header::before,
-  .container-header {
-    height: 80vh;
-  }
-  .container-header .header-section .header-img img {
-    width: 270px;
-  }
-  .container-header .header-section .header-text .horizontal-text p {
-    width: 100%;
-  }
-  .header-section {
-    max-width: 95% !important;
-  }
   .designer div h2,
   .dancer div h2,
   .entrepreneur div h2,
@@ -742,9 +72,31 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .header-img {
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+  .viajes-title, .blog-title {
+    -webkit-writing-mode: horizontal-tb !important;
+        -ms-writing-mode: lr-tb !important;
+            writing-mode: horizontal-tb !important;
+    -webkit-transform: rotate(0deg) !important;
+            transform: rotate(0deg) !important;
+  }
+  .viaje-text::after, .blog-text::after, .blob-viajes, .heart-blog {
     display: none;
+  }
+  .tienda .tienda-text {
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .estebanAceves .title-container {
+    margin-left: 20px !important;
+  }
+  .estebanAceves .title-container .title {
+    width: 80% !important;
+  }
+  .texts-esteban p {
+    text-align: center;
   }
   .designer div h2,
   .dancer div h2,
@@ -752,77 +104,24 @@ body {
   .traveler div h2 {
     left: 220px !important;
   }
-  .footer-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .btn-viajes {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
-  .footer-content .contacto-texts {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  .btn-blog {
+    -webkit-transform: translate(-37%, 0);
+            transform: translate(-37%, 0);
   }
-  .blog-container,
-  .tienda,
-  .blog {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blog-container .blog-text h2 {
-    font-weight: 900;
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  .text-blog {
-    text-align: center !important;
-  }
-  .text-blog p,
-  .tex-blog-right h3,
-  .blog .tex-viajes h3 {
-    margin-right: 0 !important;
+  .viaje-text {
     margin-left: 0 !important;
   }
-  .tex-blog-right h3,
-  .blog .tex-viajes h3 {
-    margin-top: -120px;
-    font-size: 40px !important;
+  .blog-text, .viaje-text {
+    margin-top: -90px;
   }
-  .blog-container .blog .tex-viajes h3::after,
-  .blog-right .tex-blog-right h3::after {
-    display: none;
-  }
-  .blog-container .blog .btn-viajes,
-  .blog-right .btn-blog {
-    -webkit-transform: translate(-50%, -50px);
-            transform: translate(-50%, -50px);
-  }
-  .tienda h2 {
-    left: 10px;
-  }
-  .tienda .tienda-text {
-    width: 90%;
-  }
-  .container-header .header-section .header-text .title-container {
-    width: 80%;
-    left: 18%;
-    top: 25px;
-  }
-  .container-header {
-    height: 80vh;
-  }
-  .container-header .header-section .header-text .vertical-text h2 {
-    margin-left: 0;
-  }
-  .container-header .header-section .header-text .horizontal-text p,
-  .blog-container .blog .tex-viajes p,
-  .blog-right .tex-blog-right {
-    width: 100%;
+  .blog-text {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -837,45 +136,493 @@ body {
   .designer div:nth-child(2) {
     background-size: 350px !important;
   }
-  .about {
-    height: 470px;
+  .about-container .about .designer div {
+    width: 100% !important;
   }
-  .blog-container .blog-text h2,
+  .about-container .about .designer div h2 {
+    line-height: 500px !important;
+  }
+  .about-container .about .dancer div h2 {
+    line-height: 580px !important;
+  }
+  .about-container .entrepreneur div h2 {
+    line-height: 660px !important;
+  }
+  .about-container .traveler div h2 {
+    line-height: 740px !important;
+  }
+  .tienda h2, .viajes-title, .blog-title {
+    font-size: 70px !important;
+  }
+  .viaje-text, .blog-text {
+    font-size: 35px !important;
+  }
+  .img-viajes img, .img-blog img {
+    width: 90% !important;
+  }
   .tienda h2 {
-    font-size: 80px;
+    margin-top: -40px !important;
   }
-  .tienda h2 {
-    top: -55px;
+}
+
+p {
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.header {
+  background-color: #171918;
+}
+
+.header .logo img {
+  width: 100px;
+}
+
+.estebanAceves::before {
+  content: "";
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 24, 23, 0)), to(#161817));
+  background: linear-gradient(rgba(22, 24, 23, 0), #161817);
+}
+
+.estebanAceves {
+  position: relative;
+  background: #171918 url(../img/fondo.png) no-repeat center;
+}
+
+.estebanAceves .esteban-img img {
+  margin-top: 50px;
+  width: 500px !important;
+}
+
+.estebanAceves .hi {
+  font-size: 50px;
+  font-weight: 900;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 10px;
+}
+
+.estebanAceves .hi::after {
+  position: absolute;
+  content: "";
+  bottom: 35px;
+  right: 20px;
+  width: 80px;
+  height: 7px;
+  background-color: #57D7FF;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.estebanAceves .title-container {
+  margin-left: 105px;
+}
+
+.estebanAceves .title-container .title {
+  font-size: 0;
+  width: 60%;
+}
+
+.about-container {
+  background-color: #171918;
+}
+
+.about-container .about {
+  position: relative;
+  height: 600px;
+}
+
+.about-container .about .designer div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 600px;
+}
+
+.about-container .about .designer div:nth-child(2) {
+  background: url(../img/esteban-about.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 1;
+}
+
+.about-container .about .designer div h2,
+.about-container .about .dancer div h2,
+.about-container .about .entrepreneur div h2,
+.about-container .about .traveler div h2 {
+  position: absolute;
+  left: 800px;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.about-container .about .designer div h2 {
+  color: #fff;
+  line-height: 470px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+.about-container .about .designer div:nth-child(2) h2,
+.about-container .about .entrepreneur div:nth-child(2) h2 {
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
+.about-container .about .dancer div h2 {
+  -webkit-animation: animate 14s linear infinite;
+          animation: animate 14s linear infinite;
+  color: #57d7ff;
+  line-height: 605px;
+}
+
+.about-container .about .dancer div:nth-child(2) h2,
+.about-container .about .traveler div:nth-child(2) h2 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #57d7ff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
+.about-container .about .entrepreneur div h2 {
+  color: #fff;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+  line-height: 740px;
+}
+
+.about-container .about .traveler div h2 {
+  color: #57d7ff;
+  line-height: 880px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  .vertical-text h2 {
-    display: none;
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
-  .container-header .header-section .header-text .title-container {
-    left: 16%;
-    top: 10%;
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  .container-header .header-section .header-text {
-    margin-top: 0;
-    text-align: center;
+  50% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
-  .about .designer div {
-    top: -85px;
-    left: -10px;
+}
+
+.viajes-container {
+  background-color: #171918;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.viajes-container .viajes-title {
+  font-weight: 900;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 120px;
+  color: rgba(87, 216, 255, 0.075);
+  margin-left: 0;
+}
+
+.viajes-container .viaje-text {
+  font-weight: 900;
+  font-size: 60px;
+  margin-left: -100px;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+}
+
+.viajes-container .viaje-text span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.viajes-container .viaje-text p {
+  position: relative;
+  z-index: 5;
+}
+
+.viajes-container .viaje-text::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57d7ff;
+}
+
+.viajes-container .blob-viajes {
+  position: absolute;
+  right: 150px;
+  fill: rgba(87, 216, 255, 0.212);
+  width: 17vmax;
+  z-index: 1;
+  -webkit-animation: move-viajes 15s ease-in-out infinite;
+          animation: move-viajes 15s ease-in-out infinite;
+  -webkit-transform-origin: 50% 40%;
+          transform-origin: 50% 40%;
+}
+
+@-webkit-keyframes move-viajes {
+  0% {
+    -webkit-transform: scale(1) translate(10px, -130px);
+            transform: scale(1) translate(10px, -130px);
   }
-  .about .designer div {
-    width: 100%;
+  38% {
+    -webkit-transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+            transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
   }
-  .about .designer div h2 {
-    line-height: 500px;
+  40% {
+    -webkit-transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+            transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
   }
-  .about .dancer div h2 {
-    line-height: 410px;
+  78% {
+    -webkit-transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+            transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
   }
-  .about .entrepreneur div h2 {
-    line-height: 490px;
+  80% {
+    -webkit-transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+            transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
   }
-  .about .traveler div h2 {
-    line-height: 570px;
+  100% {
+    -webkit-transform: scale(1) translate(10px, -130px);
+            transform: scale(1) translate(10px, -130px);
   }
+}
+
+@keyframes move-viajes {
+  0% {
+    -webkit-transform: scale(1) translate(10px, -130px);
+            transform: scale(1) translate(10px, -130px);
+  }
+  38% {
+    -webkit-transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+            transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+  }
+  40% {
+    -webkit-transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+            transform: scale(0.8, 1) translate(50px, -110px) rotate(160deg);
+  }
+  78% {
+    -webkit-transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+            transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+  }
+  80% {
+    -webkit-transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+            transform: scale(1.2) translate(50px, -150px) rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(10px, -130px);
+            transform: scale(1) translate(10px, -130px);
+  }
+}
+
+.container-blog {
+  background-color: #171918;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.container-blog .blog-title {
+  font-weight: 900;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 120px;
+  color: rgba(87, 216, 255, 0.075);
+  margin-left: 0;
+  position: relative;
+}
+
+.container-blog .blog-text {
+  font-weight: 900;
+  font-size: 60px;
+  margin-left: -100px;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+  margin-right: -200px;
+}
+
+.container-blog .blog-text span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-blog .blog-text::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57d7ff;
+}
+
+.container-blog .texts-blog {
+  position: relative;
+}
+
+.container-blog .texts-blog p {
+  margin-right: -115px;
+}
+
+.container-blog .heart-wrap-blog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+}
+
+.container-blog .heart-blog {
+  height: 830px;
+  pointer-events: none;
+  -webkit-transform: translate3d(-25%, 0, 0);
+          transform: translate3d(-25%, 0, 0);
+  width: 700px;
+}
+
+.container-blog .btn-blog {
+  margin-left: -17px;
+}
+
+.tienda {
+  width: 100%;
+  height: 600px;
+  background: #171918 url(../img/fondo-tienda.png) no-repeat center center/cover;
+  color: #fff;
+}
+
+.tienda h2 {
+  margin-top: -70px;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.tienda .tienda-text {
+  margin-top: 80px;
+  width: 40%;
+  text-align: center;
+}
+
+.tienda .tienda-text .btn-tienda {
+  width: 200px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.tienda .tienda-text .btn-tienda svg,
+.tienda .tienda-text .btn-tienda svg rect {
+  width: 200px;
+}
+
+.tienda .tienda-text .btn-tienda:hover svg rect {
+  stroke-dasharray: 100, 410;
+}
+
+.contacto-container {
+  background-color: #171918;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.contacto-container .logo {
+  width: 200px;
+  height: 100px;
+}
+
+.contacto-container .social-media a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.contacto-container .copy {
+  margin-top: 30px;
+}
+
+.contacto-container .copy .webcastell {
+  text-decoration: none;
+  color: #57d8ffcb;
+  font-weight: 500;
+}
+
+.btn-general {
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  line-height: 37px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+}
+
+.btn-general:hover {
+  color: #57d7ff;
+}
+
+.texts-blog h3, .texts-blog p {
+  text-align: right;
+}
+
+.btn-general svg,
+.btn-general svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.btn-general svg rect {
+  stroke: #57d7ff;
+  stroke-width: 4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  stroke-dasharray: 500, 500;
+  stroke-dashoffset: 0;
+}
+
+.btn-general:hover svg rect {
+  stroke-dasharray: 100, 305;
+  stroke-dashoffset: 220;
+  stroke: #fff;
 }
 /*# sourceMappingURL=style.css.map */

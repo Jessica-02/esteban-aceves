@@ -1,0 +1,140 @@
+// Responsive
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+    .designer div h2,
+    .dancer div h2,
+    .entrepreneur div h2,
+    .traveler div h2 {
+      left: 430px !important;
+    }
+    .designer div:nth-child(2) {
+      background-size: 410px !important;
+    }
+    .about {
+      height: 500px;
+    }
+    .about .designer div {
+      height: 445px;
+      left: -20px;
+    }
+    .about .designer div h2 {
+      line-height: 310px;
+    }
+    .about .dancer div h2 {
+      line-height: 440px;
+    }
+    .about .entrepreneur div h2 {
+      line-height: 565px;
+    }
+    .about .traveler div h2 {
+      line-height: 690px;
+    }
+    .img-viajes img {
+      margin-left: -100px;
+    }
+    .img-blog {
+      margin-right: -100px;
+    }
+    .blog-container .blog .tex-viajes p,
+    .blog-right .tex-blog-right {
+      width: 95%;
+    }
+    .tienda .tienda-text {
+      width: 60%;
+    }
+    .blob-blog,
+    .blob-viajes {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px){
+    .viajes-title, .blog-title{
+      writing-mode: horizontal-tb !important;
+      transform: rotate(0deg) !important;
+    }
+    .viaje-text::after, .blog-text::after, .blob-viajes, .heart-blog{
+      display: none;
+    }
+
+    .tienda .tienda-text {
+      width: 90% !important;
+    }
+
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .estebanAceves .title-container{
+      margin-left: 20px !important;
+    }
+    .estebanAceves .title-container .title {
+      width: 80% !important;
+    }
+    .texts-esteban p{
+      text-align: center;
+    }
+    .designer div h2,
+    .dancer div h2,
+    .entrepreneur div h2,
+    .traveler div h2 {
+      left: 220px !important;
+    }
+
+    .btn-viajes {
+      transform: translate(-50%, 0);
+    }
+    .btn-blog{
+      transform: translate(-37%, 0);
+    }
+
+    .viaje-text{
+      margin-left: 0 !important;
+    }
+    .blog-text, .viaje-text{
+      margin-top: -90px;
+    }
+
+    .blog-text{
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .designer div h2,
+    .dancer div h2,
+    .entrepreneur div h2,
+    .traveler div h2 {
+      left: 120px !important;
+      font-size: 35px !important;
+    }
+    .designer div:nth-child(2) {
+      background-size: 350px !important;
+    }
+    .about-container .about .designer div {
+      width: 100% !important;
+    }
+    .about-container .about .designer div h2 {
+      line-height: 500px !important;
+    }
+    .about-container .about .dancer div h2 {
+      line-height: 580px !important;
+    }
+    .about-container .entrepreneur div h2 {
+      line-height: 660px !important;
+    }
+    .about-container .traveler div h2 {
+      line-height: 740px !important;
+    }
+
+    .tienda h2, .viajes-title, .blog-title{
+      font-size: 70px !important;
+    }
+    .viaje-text, .blog-text{
+      font-size: 35px !important;
+    }
+    .img-viajes img, .img-blog img{
+      width: 90% !important;
+    }
+
+    .tienda h2{
+      margin-top: -40px !important;
+    }
+  }

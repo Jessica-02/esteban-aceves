@@ -46,7 +46,7 @@ let config = {
 
 
   // animation duration
-  duration: 1800,
+  duration: 2000,
 
   // option allows you to rotate the second/end path in a way that the points
   // travel the least possible distance during morph, and as an effect the morph
