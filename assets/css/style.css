@@ -659,36 +659,6 @@ p {
   stroke-dasharray: 100, 410;
 }
 
-.contacto-container {
-  background-color: #171918;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.contacto-container .logo {
-  width: 200px;
-  height: 100px;
-}
-
-.contacto-container .social-media a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 30px;
-  margin-left: 10px;
-}
-
-.contacto-container .copy {
-  font-size: 20px;
-  margin-top: 30px;
-  color: rgba(255, 255, 255, 0.336);
-}
-
-.contacto-container .copy .webcastell {
-  text-decoration: none;
-  color: #57d8ff85;
-  font-weight: 500;
-}
-
 .btn-general {
   width: 130px;
   height: 40px;
@@ -728,5 +698,101 @@ p {
   stroke-dasharray: 100, 305;
   stroke-dashoffset: 220;
   stroke: #fff;
+}
+
+.contacto-container {
+  background-color: #171918;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.contacto-container .logo {
+  width: 200px;
+  height: 100px;
+}
+
+.contacto-container .social-media a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.contacto-container .copy {
+  font-size: 20px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.336);
+}
+
+.contacto-container .copy .webcastell {
+  text-decoration: none;
+  color: #57d8ff85;
+  font-weight: 500;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: #171918;
+  -webkit-filter: url("#blob");
+  filter: url("#blob");
+  z-index: -1;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -1;
+  left: var(--position, 50%);
+  background: #171918;
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
+}
+
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
 }
 /*# sourceMappingURL=style.css.map */
