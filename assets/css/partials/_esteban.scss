@@ -1,22 +1,59 @@
 body{
     background-color: #171918;
 }
-.esteban-header{
+
+.img-esteban img{
     width: 100%;
-    height: 100vh;
-    .logo img{
-        width: 100px;
-    }
-    .img-esteban img{
-        width: 100%;
-    }
 }
-.about-container{
-    h2{
-        -webkit-text-stroke:2px ;
-        -webkit-text-stroke-color:#fff;
-        -webkit-text-stroke-width: 1px;
-        color: transparent;
-        font-size: 70px;
-    }
+
+// ======================================= Emprendedor ================================================
+.emprendeor-title{
+    -webkit-text-stroke:2px ;
+    -webkit-text-stroke-color:#fff;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    font-size: 120px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+.empresa-link, .empresa-link-2{
+    font-weight: 900;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 80px;
+    color: hsla(194, 100%, 67%, 0.075);
+}
+
+.title-emprendedor, .title-bailarin{
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+    position: relative;
+}
+.title-emprendedor{
+    margin-left: -100px;
+}
+.title-emprendedor::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #57d7ff;
+}
+
+// ======================================= Bailarín ================================================
+.title-bailarin{
+    margin-right: -100px;
+}
+.title-bailarin::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #57d7ff;
 }

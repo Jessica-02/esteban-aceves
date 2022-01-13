@@ -3,25 +3,65 @@ body {
   background-color: #171918;
 }
 
-.esteban-header {
-  width: 100%;
-  height: 100vh;
-}
-
-.esteban-header .logo img {
-  width: 100px;
-}
-
-.esteban-header .img-esteban img {
+.img-esteban img {
   width: 100%;
 }
 
-.about-container h2 {
+.emprendeor-title {
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 1px;
   color: transparent;
-  font-size: 70px;
+  font-size: 120px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+}
+
+.empresa-link, .empresa-link-2 {
+  font-weight: 900;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 80px;
+  color: rgba(87, 216, 255, 0.075);
+}
+
+.title-emprendedor, .title-bailarin {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+  position: relative;
+}
+
+.title-emprendedor {
+  margin-left: -100px;
+}
+
+.title-emprendedor::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57d7ff;
+}
+
+.title-bailarin {
+  margin-right: -100px;
+}
+
+.title-bailarin::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #57d7ff;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
@@ -210,6 +250,20 @@ p {
 
 .header .logo img {
   width: 100px;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.container-nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-item {
+  margin-right: 30px;
 }
 
 .estebanAceves::before {

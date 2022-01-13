@@ -12,19 +12,24 @@
     <title>Esteban Aceves</title>
   </head>
   <body>
-    <header class="container-fluid header">
+    <header class="container-fluid header" data-barba="wrapper">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container fs-5">
-          <a class="navbar-brand logo" href="#">
+          <a class="navbar-brand logo d-lg-none" href="index.html">
             <img src="assets/img/logo.png" alt="Esteban Aceves - Home">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav justify-content-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Esteban</a>
+                <a class="navbar-brand logo d-none d-lg-block" href="index.html">
+                  <img src="assets/img/logo.png" alt="Esteban Aceves - Home">
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="esteban.html">Esteban</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Productos</a>
@@ -165,7 +170,7 @@
               </svg>
             </div>
 
-            <h3 class="text-uppercase blog-text" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">Campeonato <br><span>ruedafest</span></h3>
+            <h3 class="text-uppercase blog-text" data-aos="fade-up" data-aos-duration="1000" data-aos-duration="1200" data-aos-delay="300">Campeonato <br><span>ruedafest</span></h3>
             <p>El baile me ha regalado muchísimos momento de goce y satisfacción, este es uno de ellos el subirse a l escenario con tanlentosos bailarines y amigos, bailar la coreografía que teníamos tan preparada y sentir la adrenalina de escuchar el resultado de la competencia </p>
             <a class="btn-general btn-blog" href="#">
               <svg>   
@@ -235,5 +240,6 @@
       AOS.init();
     </script>
     <script src="assets/js/animation.js"></script>
+
   </body>
 </html>
