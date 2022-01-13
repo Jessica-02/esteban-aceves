@@ -24,12 +24,47 @@ body {
   font-size: 70px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1080px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
   .designer div h2,
   .dancer div h2,
   .entrepreneur div h2,
   .traveler div h2 {
-    left: 430px !important;
+    left: 350px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .container-blog p {
+    margin-right: -30px !important;
+  }
+  .btn-blog {
+    -webkit-transform: translate(-78%, 0) !important;
+            transform: translate(-78%, 0) !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container-blog p {
+    margin-right: 0 !important;
+  }
+  .btn-blog {
+    -webkit-transform: translate(-100%, 0) !important;
+            transform: translate(-100%, 0) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .esteban-img img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .designer div h2,
+  .dancer div h2,
+  .entrepreneur div h2,
+  .traveler div h2 {
+    left: 130px !important;
   }
   .designer div:nth-child(2) {
     background-size: 410px !important;
@@ -53,26 +88,19 @@ body {
   .about .traveler div h2 {
     line-height: 690px;
   }
-  .img-viajes img {
-    margin-left: -100px;
+  .img-viajes img, .img-blog img {
+    width: 50% !important;
   }
-  .img-blog {
-    margin-right: -100px;
+  .social-media a {
+    font-size: 25px !important;
   }
-  .blog-container .blog .tex-viajes p,
-  .blog-right .tex-blog-right {
-    width: 95%;
-  }
-  .tienda .tienda-text {
-    width: 60%;
-  }
-  .blob-blog,
-  .blob-viajes {
-    display: none;
+  .contacto-container .logo {
+    width: 150px !important;
+    height: 70px !important;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1080px) {
+@media screen and (min-width: 320px) and (max-width: 992px) {
   .viajes-title, .blog-title {
     -webkit-writing-mode: horizontal-tb !important;
         -ms-writing-mode: lr-tb !important;
@@ -83,15 +111,34 @@ body {
   .viaje-text::after, .blog-text::after, .blob-viajes, .heart-blog {
     display: none;
   }
+  .viaje-text {
+    margin-left: 0 !important;
+  }
+  .btn-viajes {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .btn-blog {
+    -webkit-transform: translate(-50%, 0) !important;
+            transform: translate(-50%, 0) !important;
+  }
+  .blog-text, .viaje-text {
+    margin-top: -90px !important;
+  }
+  .container-blog p {
+    margin-right: 0 !important;
+  }
+  .blog-text {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 15px;
+  }
   .tienda .tienda-text {
     width: 90% !important;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .estebanAceves .title-container {
-    margin-left: 20px !important;
-  }
   .estebanAceves .title-container .title {
     width: 80% !important;
   }
@@ -104,33 +151,17 @@ body {
   .traveler div h2 {
     left: 220px !important;
   }
-  .btn-viajes {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-  }
-  .btn-blog {
-    -webkit-transform: translate(-37%, 0);
-            transform: translate(-37%, 0);
-  }
-  .viaje-text {
-    margin-left: 0 !important;
-  }
-  .blog-text, .viaje-text {
-    margin-top: -90px;
-  }
-  .blog-text {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    margin-bottom: 15px;
-  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
+  .estebanAceves .title-container {
+    margin-left: 20px !important;
+  }
   .designer div h2,
   .dancer div h2,
   .entrepreneur div h2,
   .traveler div h2 {
-    left: 120px !important;
+    left: 85px !important;
     font-size: 35px !important;
   }
   .designer div:nth-child(2) {
@@ -158,7 +189,10 @@ body {
     font-size: 35px !important;
   }
   .img-viajes img, .img-blog img {
-    width: 90% !important;
+    width: 80% !important;
+  }
+  .viajes-container {
+    padding-top: 0 !important;
   }
   .tienda h2 {
     margin-top: -40px !important;
@@ -355,6 +389,7 @@ p {
 }
 
 .viajes-container .viaje-text {
+  margin-top: -45px;
   font-weight: 900;
   font-size: 60px;
   margin-left: -100px;
@@ -471,7 +506,8 @@ p {
   font-size: 60px;
   margin-left: -100px;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
-  margin-right: -200px;
+  margin-right: -150px;
+  margin-top: -45px;
 }
 
 .container-blog .blog-text span {
@@ -493,15 +529,15 @@ p {
   position: relative;
 }
 
-.container-blog .texts-blog p {
-  margin-right: -115px;
-}
-
 .container-blog .heart-wrap-blog {
   position: absolute;
   top: 0;
   left: 0;
   width: 20%;
+}
+
+.container-blog p {
+  margin-right: -55px;
 }
 
 .container-blog .heart-blog {
@@ -513,7 +549,8 @@ p {
 }
 
 .container-blog .btn-blog {
-  margin-left: -17px;
+  -webkit-transform: translate(-59%, 0);
+          transform: translate(-59%, 0);
 }
 
 .tienda {
@@ -595,10 +632,6 @@ p {
 
 .btn-general:hover {
   color: #57d7ff;
-}
-
-.texts-blog h3, .texts-blog p {
-  text-align: right;
 }
 
 .btn-general svg,
