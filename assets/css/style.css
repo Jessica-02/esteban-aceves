@@ -358,15 +358,21 @@ p {
 }
 
 .about-container .about .designer div h2 {
-  color: #fff;
+  color: #4ffcc8;
   line-height: 470px;
   -webkit-animation: animate 10s linear infinite;
           animation: animate 10s linear infinite;
 }
 
-.about-container .about .designer div:nth-child(2) h2,
+.about-container .about .designer div:nth-child(2) h2 {
+  -webkit-text-stroke-color: #4ffcc8;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
 .about-container .about .entrepreneur div:nth-child(2) h2 {
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #E99652;
   -webkit-text-stroke-width: 1px;
   color: transparent;
   z-index: 5;
@@ -379,8 +385,7 @@ p {
   line-height: 605px;
 }
 
-.about-container .about .dancer div:nth-child(2) h2,
-.about-container .about .traveler div:nth-child(2) h2 {
+.about-container .about .dancer div:nth-child(2) h2 {
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #57d7ff;
   -webkit-text-stroke-width: 1px;
@@ -388,15 +393,23 @@ p {
   z-index: 5;
 }
 
+.about-container .about .traveler div:nth-child(2) h2 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #DB425E;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  z-index: 5;
+}
+
 .about-container .about .entrepreneur div h2 {
-  color: #fff;
+  color: #E99652;
   -webkit-animation: animate 8s linear infinite;
           animation: animate 8s linear infinite;
   line-height: 740px;
 }
 
 .about-container .about .traveler div h2 {
-  color: #57d7ff;
+  color: #DB425E;
   line-height: 880px;
   -webkit-animation: animate 10s linear infinite;
           animation: animate 10s linear infinite;
@@ -438,7 +451,7 @@ p {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   font-size: 120px;
-  color: rgba(87, 216, 255, 0.075);
+  color: #E99652;
   margin-left: 0;
 }
 
@@ -455,9 +468,21 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.viajes-container .viaje-text p {
+.viajes-container .viaje-texts p {
   position: relative;
   z-index: 5;
+}
+
+.viajes-container .blob-viajes svg {
+  position: absolute;
+  right: 150px;
+  fill: #E99652;
+  width: 17vmax;
+  z-index: 1;
+  -webkit-animation: move-viajes 15s ease-in-out infinite;
+          animation: move-viajes 15s ease-in-out infinite;
+  -webkit-transform-origin: 50% 40%;
+          transform-origin: 50% 40%;
 }
 
 .viajes-container .viaje-text::after {
@@ -467,19 +492,7 @@ p {
   left: 0;
   width: 100px;
   height: 7px;
-  background-color: #57d7ff;
-}
-
-.viajes-container .blob-viajes {
-  position: absolute;
-  right: 150px;
-  fill: rgba(87, 216, 255, 0.212);
-  width: 17vmax;
-  z-index: 1;
-  -webkit-animation: move-viajes 15s ease-in-out infinite;
-          animation: move-viajes 15s ease-in-out infinite;
-  -webkit-transform-origin: 50% 40%;
-          transform-origin: 50% 40%;
+  background-color: #E99652;
 }
 
 @-webkit-keyframes move-viajes {
@@ -550,7 +563,7 @@ p {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   font-size: 120px;
-  color: rgba(87, 216, 255, 0.075);
+  color: #DB425E;
   margin-left: 0;
   position: relative;
 }
@@ -559,7 +572,7 @@ p {
   font-weight: 900;
   font-size: 60px;
   margin-left: -100px;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+  text-shadow: 2px 2px 20px 0, 0, 0, 0.657;
   margin-right: -150px;
   margin-top: -45px;
 }
@@ -576,11 +589,12 @@ p {
   right: 0;
   width: 100px;
   height: 7px;
-  background-color: #57d7ff;
+  background-color: #DB425E;
 }
 
 .container-blog .texts-blog {
   position: relative;
+  z-index: 10;
 }
 
 .container-blog .heart-wrap-blog {
@@ -588,6 +602,7 @@ p {
   top: 0;
   left: 0;
   width: 20%;
+  z-index: -1;
 }
 
 .container-blog p {
@@ -663,12 +678,14 @@ p {
 }
 
 .contacto-container .copy {
+  font-size: 20px;
   margin-top: 30px;
+  color: rgba(255, 255, 255, 0.336);
 }
 
 .contacto-container .copy .webcastell {
   text-decoration: none;
-  color: #57d8ffcb;
+  color: #57d8ff85;
   font-weight: 500;
 }
 

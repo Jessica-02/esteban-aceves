@@ -32,7 +32,7 @@ let config = {
   // shape colors
   shapes: [
   {
-    fill: 'hsla(194, 100%, 67%, 0.212)',
+    fill: '#DB425E',
     stroke: '' },
 
   {
